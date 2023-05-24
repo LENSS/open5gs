@@ -1060,8 +1060,14 @@ int gmm_handle_ul_nas_transport(amf_ue_t *amf_ue,
                 //    nas_5gs_send_gmm_status(amf_ue, OGS_5GMM_CAUSE_DNN_NOT_SUPPORTED_OR_NOT_SUBSCRIBED_IN_THE_SLICE));
                 // return OGS_ERROR;
 		
-		// Use first slice available
-		selected_slice = amf_ue->slice;
+                if(!selected_slice){
+                    selected_slice = amf_ue->slice;
+                    ogs_assert(selected_slice);
+                }
+                if(!sess->dnn){
+                    sess->dnn = "internet";
+                    ogs_assert(sess->dnn);
+                }
             }
 
             /* Store S-NSSAI */
