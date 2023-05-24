@@ -21,7 +21,7 @@ db_uri: mongodb://127.0.0.1/open5gs
 #    domain: core,sbi,scp,event,tlv,mem,sock
 #
 logger:
-    file: /home/lenss/5G-Core-Networkopen5gs/install/var/log/open5gs/scp.log
+    file: /home/lenss/5G-Core-Network/open5gs/install/var/log/open5gs/scp.log
 
 #
 # scp:
