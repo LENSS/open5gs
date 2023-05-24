@@ -19,7 +19,6 @@
 
 #include "context.h"
 #include <netinet/ip.h>
-#include <linux/mptcp.h>
 
 
 #if HAVE_NETINET_IP6_H
