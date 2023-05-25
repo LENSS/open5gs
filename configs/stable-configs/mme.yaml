@@ -19,7 +19,7 @@
 #    domain: core,s1ap,nas,fd,gtp,mme,emm,esm,event,tlv,mem,sock
 #
 logger:
-    file:/home/lenss/5G-Core-Network/open5gs/install/var/log/open5gs/mme.log
+    file: /home/lenss/5G-Core-Network/open5gs/install/var/log/open5gs/mme.log
 
 #
 # mme:
